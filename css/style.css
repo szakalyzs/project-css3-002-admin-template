@@ -14,7 +14,7 @@ body {
 .header--dark {
     background-color: rgb(51,57,64); /*req*/
     color: rgb(236,236,236); /*req*/
-   
+    padding: 0.7rem 1rem 1.1rem 1rem;
 }
 
 .header__title {                                   
@@ -27,17 +27,19 @@ body {
 .header__search {
     display: inline-block; /*req*/
     position: absolute;
-    right: 0;
+    right: 1.5rem;
 }
 
 .search__input{
     border-radius: 4px 0 0 4px; /*req*/
     padding: 0.375rem 0.75rem; /*req*/
     font-size: 1.2rem; /*req*/
- 
- 
-    /*szegély-áttűnés
-      fókuszra szegélyszín*/
+    border: none;
+    transition: border 15s;
+}
+
+input:focus {
+    border: 1px solid rgb(128,189,255);
 }
 
 .search__btn {
@@ -47,15 +49,27 @@ body {
     padding: 0.375rem 0.75rem;
     font-size: 1.2rem;
     cursor: pointer;
-    /*float: right;*/
+    border: none;
+    margin: 0 1rem 0 -0.3rem;
 }
 
 .main__nav {
     background-color: rgb(33,37,41); /*req*/
+    color:rgb(144,144,144);
 }
 
 .nav__ul {
     list-style-type: none;
+    padding: 1rem;
+}
+
+.nav__ul li {
+    padding: 0.5rem 0;
+}
+
+.nav__ul li > span {
+    font-size: 0.6rem;
+    font-weight: 900;
 }
 
 .nav__ul li a {

@@ -14,7 +14,9 @@ body {
 .header--dark {
     background-color: rgb(51,57,64); /*req*/
     color: rgb(236,236,236); /*req*/
-    padding: 0.7rem 1rem 1.1rem 1rem;
+    padding: 0.7rem 1rem 0.6rem 1rem;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .header__title {                                   
@@ -22,18 +24,29 @@ body {
     font-weight: 100;
     display: inline-block; /*req*/              
     margin: 0;
+    min-width: fit-content;
+    flex:20%;
+}
+
+.header__menu {
+    flex: 5%;
+    padding-top: 0.3rem;
+    /*min-width: fit-content;*/
 }
 
 .header__search {
     display: inline-block; /*req*/
-    position: absolute;
-    right: 1.5rem;
+    flex: 75%;
+    text-align: right;
+    min-width: fit-content;
 }
 
 .search__input{
     border-radius: 4px 0 0 4px; /*req*/
     padding: 0.375rem 0.75rem; /*req*/
     font-size: 1.2rem; /*req*/
+    width: 60%;
+    max-width:16rem;
     border: none;
     transition: border 15s;
 }

@@ -10,26 +10,28 @@
 </head>
 <body>
     <header class="header--dark">
-        <h3 class="header__title">Admin Page</h3>
-        <div class="header__menu"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+        <h3 class="header__title">Admin&nbsp;Page</h3>
+        <div class="header__menu"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
         <div class="header__search">
             <input class="search__input" type="text" placeholder="Search for...">
             <button class="search__btn"><i class="fa fa-search"></i></button>
-            <i class="fa fa-user"></i> &nbsp;<i class="fa fa-caret-down"></i>
+            <div class="search__user">
+                <a href="#"><i class="fa fa-user"></i> &nbsp;<i class="fa fa-caret-down"></i></a>
+            </div>
         </div>
     </header>
-    <main>
-        <aside>
+    <main class="main--row">
+        <aside class="aside--left">
             <nav class="main__nav">
                 <ul class="nav__ul">
                     <li><span>CORE</span></li>
-                    <li><a href=""><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
+                    <li><a href="#"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
                     <li><span>INTERFACE</span></li>
-                    <li><a href=""><i class="fa fa-windows"></i> <span>Layouts</span></a></li>
-                    <li><a href=""><i class="fa fa-bookmark"></i> <span>Pages</span></a></li>
+                    <li><a href="#"><i class="fa fa-windows"></i><span>Layouts</span></a></li>
+                    <li><a href="#"><i class="fa fa-bookmark"></i><span>Pages</span></a></li>
                     <li><span>ADDONS</span></li>
-                    <li><a href=""><i class="fa fa-area-chart"></i> <span>Charts</span></a></li>
-                    <li><a href=""><i class="fa fa-table"></i> <span>Tables</span></a></li>
+                    <li><a href="#"><i class="fa fa-area-chart"></i> <span>Charts</span></a></li>
+                    <li><a href="#"><i class="fa fa-table"></i><span>Tables</span></a></li>
                 </ul>
             </nav>
         </aside>
@@ -38,7 +40,40 @@
             <h1>Dashboard</h1>
             <div class="main__breadcrumb">
                 Dashboard
-                
+            </div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        Primary&nbsp;Card
+                    </div>
+                    <div class="card__bottom">
+                        View&nbsp;Details
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">
+                        Warning&nbsp;Card
+                    </div>
+                    <div class="card__bottom">
+                        View&nbsp;Details
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        Succes&nbsp;Card
+                    </div>
+                    <div class="card__bottom">
+                        View&nbsp;Details
+                    </div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">
+                        Danger&nbsp;Card
+                    </div>
+                    <div class="card__bottom">
+                        View&nbsp;Details
+                    </div>
+                </div>
             </div>
         </section>
     </main>

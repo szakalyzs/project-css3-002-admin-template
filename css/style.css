@@ -104,6 +104,7 @@ input:focus {
 .nav__ul {
     list-style-type: none;
     padding-left: 1.5rem;
+    position: relative;
 }
 
 .nav__ul li {
@@ -184,6 +185,7 @@ input:focus {
 
 .card__bottom {
     padding: 0.8rem 1rem;
+    position: relative;
     font-size: 0.8rem;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -216,4 +218,11 @@ div[class*="main__card--"]:hover {
     opacity: 0.8;
     cursor: pointer;
 
+}
+
+.card__arrow {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    font-size: .6rem;
 }

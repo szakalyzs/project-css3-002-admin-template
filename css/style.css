@@ -226,3 +226,19 @@ div[class*="main__card--"]:hover {
     right: 1rem;
     font-size: .6rem;
 }
+
+li > .card__arrow {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    font-size: .6rem;
+}
+
+@media screen and (min-width: 700px) {
+    .card__arrow, li > .card__arrow {
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+        font-size: .6rem;
+    }
+}

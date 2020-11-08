@@ -158,10 +158,6 @@ input:focus {
 
 .main__card {
     color: var(--link-hover-color);
-   /*  display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    align-items: center; */
     width: 23.5%;
 
 }
